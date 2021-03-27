@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-27T06:35:28.346Z</updated>
+  <updated>2021-03-27T07:14:15.920Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>研途</title>
+    <link href="http://example.com/2021/03/27/%E7%A0%94%E9%80%94/"/>
+    <id>http://example.com/2021/03/27/%E7%A0%94%E9%80%94/</id>
+    <published>2021-03-27T07:11:46.000Z</published>
+    <updated>2021-03-27T07:14:15.920Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="研途"><a href="#研途" class="headerlink" title="研途"></a>研途</h2><p>“The person who says he knows what he thinks but cannot express it, usually does not know what he thinks.” — Mortimer Adler<br><br /><br><br /></p><h3 id="操作系统–OS"><a href="#操作系统–OS" class="headerlink" title="操作系统–OS"></a>操作系统–OS</h3><ul><li>Linux</li><li>Chcore</li><li>Harper OS <br /></li></ul><p><em>HarperOS 是喜欢的智能家居 室内设计 的交点</em><br /></p><h3 id="计算机视觉–CV"><a href="#计算机视觉–CV" class="headerlink" title="计算机视觉–CV"></a>计算机视觉–CV</h3><p><em>热爱可抵岁月漫长</em> <br /></p><p><em>CV是喜欢的摄影 摄像 机器人 无人机 无人驾驶 ect的交点</em><br /></p><br /><br /><br />  *一穷二白的年纪 至少还有微薄的工资｜充足的时间｜免费的网络资源｜可以记录生活的设备*]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;研途&quot;&gt;&lt;a href=&quot;#研途&quot; class=&quot;headerlink&quot; title=&quot;研途&quot;&gt;&lt;/a&gt;研途&lt;/h2&gt;&lt;p&gt;“The person who says he knows what he thinks but cannot express it, us</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
