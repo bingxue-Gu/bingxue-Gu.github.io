@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-16T02:35:09.629Z</updated>
+  <updated>2021-09-27T06:44:19.304Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>筑-空中楼阁</title>
+    <link href="http://example.com/2021/09/27/%E7%AD%91/"/>
+    <id>http://example.com/2021/09/27/%E7%AD%91/</id>
+    <published>2021-09-27T02:00:00.000Z</published>
+    <updated>2021-09-27T06:44:19.304Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><p><em>物理资源的逻辑抽象</em></p><p><em>从底层向应用层</em></p><blockquote><p>计算机是可以自动执行任意的逻辑或算数指令序列的机器</p><p>计算机 = 一台自动执行的机器 + <strong>一张说明书（程序）</strong>+ 一张白纸（存</p><p>储）</p><h4 id="一张说明书"><a href="#一张说明书" class="headerlink" title="一张说明书"></a>一张说明书</h4><ul><li>程序(说明书)</li></ul><blockquote><p>程序 = 算法 + 数据结构</p><p>程序是用来指导计算机应该做些什么事情的一张<strong>说明书</strong>，只有在程序的</p><p>帮助下，计算机才知道应该如何执行</p><p><strong>程序的最终目的是用来处理数据的</strong>。</p><p>一个程序可能没有输入，但是一定会有输出。不然就是浪费电</p></blockquote><ul><li>算法</li></ul><blockquote><p>算法是程序的逻辑</p></blockquote><ul><li>数据结构</li></ul><blockquote><p>数据结构是计算机中存储、组织数据的方式，让计算机高效的处理数据</p></blockquote><ul><li>语言</li></ul><blockquote><p>语言是程序的表示方法</p></blockquote><h4 id="一台机器"><a href="#一台机器" class="headerlink" title="一台机器"></a>一台机器</h4><ul><li>CPU</li></ul><blockquote><ol><li><p>知道程序（说明书）存储的位置</p></li><li><p>知道自己运行到说明书的什么地方</p></li><li><p>可以读取直接自己下一条应该根据（程序）说明书干什么事情</p></li><li><p>能干的事情：算数逻辑运算，或者跳转（说明书分支）</p></li></ol></blockquote><h4 id="一张白纸"><a href="#一张白纸" class="headerlink" title="一张白纸"></a>一张白纸</h4><ul><li>CPU 的寄存器 (Register)</li></ul><blockquote><p>CPU 本身有数据的缓存地方，叫做寄存器</p><p>数据只有在寄存器里面，才可以被 CPU 进行运算（易失）</p><p>读取寄存器的延迟时间：1</p><p>寄存器的大小：几十个数字</p></blockquote><ul><li>高速缓存 (Cache)</li></ul><blockquote><p>高速缓存是 CPU 的一个部分（不同于寄存器），由硬件进行管理，可以</p><p>忽略看不见（易失)</p><p>读取高速缓存的延迟时间：10-50</p><p>高速缓存的大小：10M 左右</p></blockquote><ul><li><p>主存 (内存，Main memory)</p><blockquote><p>主存是最大的 CPU 可以<strong>直接调用</strong>的最大的存储设备</p><p>所有的程序和数据运行的时候都会缓存在主存里面(易失)</p><p>读取主存的延迟时间：100+</p><p>主存的大小：1G-100G</p></blockquote></li><li><p>硬盘 (Hard disk)</p><blockquote><p>最大的存储设备(非易失)</p><p>读取硬盘的延迟时间：1000+</p><p>硬盘的大小：100G-1T</p></blockquote></li></ul></blockquote><p><em>一穷二白的年纪 至少还有微薄的工资｜充足的时间｜免费的网络资源｜可以记录生活的设备</em></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/yan.jpg&quot; alt=&quot;yan&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;物理资源的逻辑抽象&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;从底层向应用层&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算机是可以自动执行任意的逻辑或算数指令序列的机器&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="yan" scheme="http://example.com/tags/yan/"/>
+    
+  </entry>
   
   <entry>
     <title>研途</title>
