@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-03T07:36:16.328Z</updated>
+  <updated>2021-10-03T09:39:59.217Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>始-Hello OS</title>
+    <link href="http://example.com/2021/10/03/[OS]Hello/"/>
+    <id>http://example.com/2021/10/03/[OS]Hello/</id>
+    <published>2021-10-03T09:00:00.000Z</published>
+    <updated>2021-10-03T09:39:59.217Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><p><em>写操作系统要用汇编和C语言,现有的商业操作系统都是用这两种语言开发出来的</em></p><h5 id="PC机的引导流程"><a href="#PC机的引导流程" class="headerlink" title="PC机的引导流程"></a>PC机的引导流程</h5><blockquote><p>借用一下 GRUB 引导程序</p><p>只要我们的 PC 机上安装了 Ubuntu Linux 操作系统，GRUB 就已经存在</p><p><img src="/img/OS-2/2-1.png" alt="2-1"></p><p>OS 引导流程</p><p><img src="/img/OS-2/2-2.jpg" alt="2-2"></p><ul><li>PC 机 BIOS 固件是固化在 PC 机主板上的 ROM 芯片中的（掉电也能保存）</li></ul><blockquote><p>ROM是只读内存（Read-Only Memory）此内存的制造成本较低，常用于电脑中的开机启动</p></blockquote><ul><li>PC 机上电后的<strong>第一条指令</strong>就是 BIOS 固件中的，它负责检测和初始化 CPU、内存及主板平台，然后加载引导设备（大概率是硬盘）中的第一个扇区<strong>数据</strong>，到 0x7c00 地址开始的内存空间，再接着跳转到 0x7c00 处<strong>执行指令</strong>，在我们这里的情况下就是 GRUB 引导程序</li></ul></blockquote><h5 id="OS引导汇编"><a href="#OS引导汇编" class="headerlink" title="OS引导汇编"></a>OS引导汇编</h5><blockquote><ul><li>为什么不能直接用 C？</li></ul><p>C 作为通用的高级语言，不能直接操作特定的硬件，而且 C 语言的函数调用、函数传参，都需要<strong>用栈</strong>（栈由 CPU 特定的<strong>栈寄存器指向</strong>，所以我们要先用汇编代码处理好这些 C 语言的工作环境）</p><p><strong>[entry.asm]</strong></p><blockquote><ol><li>代码 1~40 行，用汇编定义的 GRUB 的多引导协议头，其实就是一定格式的数据，我们的 Hello OS 是用 GRUB 引导的，当然要遵循 GRUB 的多引导协议标准，<strong>让 GRUB 能识别我们的 Hello OS</strong>  之所以有两个引导头，是为了兼容 GRUB1 和 GRUB2。</li><li>代码 44~52 行，<strong>关掉中断，设定 CPU 的工作模式</strong>。你现在可能不懂，没事儿，后面 CPU 相关的课程我们会专门再研究它。</li><li>代码 54~73 行，<strong>初始化 CPU 的寄存器和 C 语言的运行环境</strong>。</li><li>代码 78~87 行，GDT_START 开始的，是 <strong>CPU 工作模式所需要的数据</strong>，同样，后面讲 CPU 时会专门介绍。</li></ol></blockquote></blockquote><h5 id="OS主函数"><a href="#OS主函数" class="headerlink" title="OS主函数"></a>OS主函数</h5><blockquote><p><strong>[main.c]</strong></p><p>汇编代码调用了 main 函数，用 C 语言写的在main.c中，最终它们分别由 nasm 和 GCC 编译成<strong>可链接模块</strong>，由 <strong>LD 链接器</strong>链接在一起，形成可执行的程序文件<br>#include “vgastr.h”<br>void main()<br>{<br>printf(“Hello OS!”);<br>return;<br>} //printf 也不是应用程序库中的那个 printf 了，而是需要我们自己实现</p></blockquote><h5 id="屏幕显示"><a href="#屏幕显示" class="headerlink" title="屏幕显示"></a>屏幕显示</h5><blockquote><p>计算机屏幕显示往往是显卡的输出，显卡有很多形式：集成在主板的叫<strong>集显</strong>，做在 CPU 芯片内的叫<strong>核显</strong>，独立存在通过 PCIE 接口连接的叫<strong>独显</strong>，性能依次上升，价格也是</p><p>要在屏幕上显示字符，就要<strong>编程操作显卡</strong></p><p>无论什么显卡都支持一种叫 VESA 的标准，这种标准下有两种工作模式：字符模式和图形模式。显卡们为了兼容这种标准，不得不自己提供一种叫 <strong>VGABIOS 的固件程序</strong></p><ul><li>显卡的<strong>字符模式</strong></li></ul><p>它把屏幕分成 24 行，每行 80 个字符，把这（24*80）个位置映射到以 0xb8000 地址开始的内存中，每<strong>两个字节</strong>对应一个字符，其中一个字节是字符的 <strong>ASCII 码</strong>，另一个字节为字符的<strong>颜色值</strong></p><p><img src="/img/OS-2/2-3.jpg" alt="2-3"></p><p><em>C 语言字符串是以 0 结尾的，其字符编码通常是 utf8，而 utf8 编码对 ASCII 字符是兼容的，即英文字符的 ASCII 编码和 utf8 编码是相等的</em></p><p><strong>[vgastr.c]</strong></p><p>代码很简单, printf I函数直接调用了 strwrite图数,而_ strwrite函数正是将字符串 里每个字符依次定入到0Xxb8000地址开始的显存中,而p_ strdst每次加2,这也是为 了跳过字符的颜色信息的空间</p></blockquote><h5 id="编译–Hello-OS-bin"><a href="#编译–Hello-OS-bin" class="headerlink" title="编译–Hello OS.bin"></a>编译–Hello OS.bin</h5><blockquote><p>安装之前我们要进行系统编译（代码块编译最终链接成可执行的二进制文件）</p><ul><li>make </li></ul><p>make 是一个工具程序，它读取一个叫“Makefile”的文件，也是一种文本文件，这个文件中写好了构建软件的规则，它能根据这些规则自动化构建软件</p><p><strong>[Makefile]</strong></p><p>makefile文件中规则是这样的:首先有一个或者多个构建目标称为“ target”;目标后面 紧跟着用于构建该目标所需要的文件,目标下面是构建该目标所需要的命令及参数</p><p>第一次构建目标后,下ー次执行make时,它会根据该目标所依赖的文件是否更新決定 是否编译该目标,如果所依赖的文件没有更新且该目标又存在,那么它便不会构建该目 示。这种特性非常有利于编译程序源代码</p><p><img src="/img/OS-2/2-4.jpg" alt="2-4"></p></blockquote><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><blockquote><p>需要GRUB在启动时找到Hello OS.bin，计算机才能在启动时加载它</p><ul><li>修改启动项</li></ul><p>经研究发现,GRUB在启动时会加载一个grub.cfg的文本文件,根据其中的内容执行 相应的操作,其中一部分内容就是启动项<br>GRUB首先会显示启动项到屏幕,然后让我们选择启动项,最后GRUB根据启动项对应的信息,加载OS文件到内存</p><p>[Hello OS的启动项]</p><p>menuentry ‘Helloos’ {<br>    insmod part_ msdos #GRUB加载分区模块识别分区<br>    insmod ext2  #GRUB加载ext文件系统模块识别ext文件系统<br>    set root=’hdo, msdos4’ #注意boot目录挂载的分区</p><p>​    multi boot2/boot/ Hellos.bin #GRUB以 multi boot2协议加载 Hellos.bin       boot #GRUB启动 Hellos.bin</p><p>}</p><ul><li>boot目录挂载分区</li></ul><blockquote><p>Linux 终端下 $ df /boot/</p><p>sada4表示为hdo, msdos4</p></blockquote><p><em>启动项放入/boot/grub/grub.cfg中</em></p><p><em>Hello OS.bin复制到/boot/</em></p></blockquote><h5 id="Do"><a href="#Do" class="headerlink" title="[Do]"></a>[Do]</h5><p><em>环境：Vmware Fusion—ubuntu18.04 虚拟机</em></p><h5 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h5><blockquote><p>$ sudo apt-get install  nasm</p><p>$ sudo apt-get install  make</p></blockquote><p>在Hello OS文件夹下执行</p><p>$ make</p><p>—-&gt; HelloOS.bin</p><h5 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h5><blockquote><ul><li>cp</li></ul><p>$ cp  HelloOS.bin /boot</p><p><img src="/img/OS-2/2-5.png" alt="2-5"></p><ul><li>boot目录挂载分区</li></ul><blockquote><p>Linux 终端下 $ df /boot/</p><p>sada4表示为hdo, msdos4<br><img src="/img/OS-2/2-6.png" alt="2-6"></p></blockquote><ul><li><p>启动项 /boot/grub/grub.cfg<br><img src="/img/OS-2/2-7.png" alt="2-7"></p></li><li><p>启动<br><img src="/img/OS-2/2-8.png" alt="2-8"><br><img src="/img/OS-2/2-9.png" alt="2-9"></p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/yan.jpg&quot; alt=&quot;yan&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;写操作系统要用汇编和C语言,现有的商业操作系统都是用这两种语言开发出来的&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&quot;PC机的引导流程&quot;&gt;&lt;a href=&quot;#PC机的引导流程&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="os" scheme="http://example.com/tags/os/"/>
+    
+  </entry>
   
   <entry>
     <title>始-程序运行</title>
