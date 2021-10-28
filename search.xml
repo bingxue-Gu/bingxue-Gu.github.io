@@ -4,17 +4,17 @@
   
     
     <entry>
-      <title>硬件-CPU 内存</title>
-      <link href="2021/10/14/%5BOS%5D%E7%A1%AC%E4%BB%B6/"/>
-      <url>2021/10/14/%5BOS%5D%E7%A1%AC%E4%BB%B6/</url>
+      <title>Algorithm-data structure</title>
+      <link href="2021/10/28/%5BAlg%5D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <url>2021/10/28/%5BAlg%5D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
       
-        <content type="html"><![CDATA[<h5 id="CPU工作模式"><a href="#CPU工作模式" class="headerlink" title="CPU工作模式"></a>CPU工作模式</h5><h5 id="地址转换"><a href="#地址转换" class="headerlink" title="地址转换"></a>地址转换</h5><h5 id="Cache与内存"><a href="#Cache与内存" class="headerlink" title="Cache与内存"></a>Cache与内存</h5><p><img src="/img/yan.jpg" alt="yan"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><h5 id="你猜"><a href="#你猜" class="headerlink" title="你猜"></a>你猜</h5>]]></content>
       
       
       
         <tags>
             
-            <tag> os </tag>
+            <tag> Alg </tag>
             
         </tags>
       
@@ -24,8 +24,8 @@
     
     <entry>
       <title>Net-网络协议</title>
-      <link href="2021/10/12/%5BNet%5D%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
-      <url>2021/10/12/%5BNet%5D%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</url>
+      <link href="2021/10/28/%5BNet%5D%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+      <url>2021/10/28/%5BNet%5D%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</url>
       
         <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><h5 id="网络协议"><a href="#网络协议" class="headerlink" title="网络协议"></a>网络协议</h5><h5 id="网络分层"><a href="#网络分层" class="headerlink" title="网络分层"></a>网络分层</h5><h5 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h5><h5 id="IP分配"><a href="#IP分配" class="headerlink" title="IP分配"></a>IP分配</h5>]]></content>
       
@@ -42,17 +42,17 @@
     
     
     <entry>
-      <title>Algorithm-data structure</title>
-      <link href="2021/10/09/%5BAlg%5D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-      <url>2021/10/09/%5BAlg%5D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+      <title>硬件-CPU 内存</title>
+      <link href="2021/10/14/%5BOS%5D%E7%A1%AC%E4%BB%B6/"/>
+      <url>2021/10/14/%5BOS%5D%E7%A1%AC%E4%BB%B6/</url>
       
-        <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><h5 id="你猜"><a href="#你猜" class="headerlink" title="你猜"></a>你猜</h5>]]></content>
+        <content type="html"><![CDATA[<h5 id="CPU工作模式"><a href="#CPU工作模式" class="headerlink" title="CPU工作模式"></a>CPU工作模式</h5><h5 id="地址转换"><a href="#地址转换" class="headerlink" title="地址转换"></a>地址转换</h5><h5 id="Cache与内存"><a href="#Cache与内存" class="headerlink" title="Cache与内存"></a>Cache与内存</h5><p><img src="/img/yan.jpg" alt="yan"></p>]]></content>
       
       
       
         <tags>
             
-            <tag> Alg </tag>
+            <tag> os </tag>
             
         </tags>
       
