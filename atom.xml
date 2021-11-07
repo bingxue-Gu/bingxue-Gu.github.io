@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-04T06:30:04.353Z</updated>
+  <updated>2021-11-07T15:07:14.469Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,19 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Deep Learning</title>
-    <link href="http://example.com/2021/11/04/[DL]%E6%B2%89%E6%B5%B8/"/>
-    <id>http://example.com/2021/11/04/[DL]%E6%B2%89%E6%B5%B8/</id>
-    <published>2021-11-04T06:30:00.000Z</published>
-    <updated>2021-11-04T06:30:04.353Z</updated>
+    <title>Edge Inteligent</title>
+    <link href="http://example.com/2021/11/07/[DL]%E6%B2%89%E6%B5%B8/"/>
+    <id>http://example.com/2021/11/07/[DL]%E6%B2%89%E6%B5%B8/</id>
+    <published>2021-11-07T15:30:00.000Z</published>
+    <updated>2021-11-07T15:07:14.469Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><p>如何利用这三分钟的热度<br>end of 11.07<br>next pytorch</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"><br><em>经过一番调研 目前将论文分为学术和工程两个方面 在初稿完成之前主要关注学术算法的研究</em></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/yan.jpg&quot; alt=&quot;yan&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如何利用这三分钟的热度&lt;br&gt;end of 11.07&lt;br&gt;next pytorch&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/yan.jpg&quot; alt=&quot;yan&quot;&gt;&lt;br&gt;&lt;em&gt;经过一番调研 目前将论文分为学术和工程两个方面 在初稿完成之前主要关注学术算法的研究&lt;/em&gt;&lt;/p&gt;
 </summary>
       
     
