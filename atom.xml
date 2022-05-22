@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-14T14:46:34.624Z</updated>
+  <updated>2022-05-22T12:47:00.147Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VScode</title>
+    <link href="http://example.com/2022/05/22/[Tools]VScode/"/>
+    <id>http://example.com/2022/05/22/[Tools]VScode/</id>
+    <published>2022-05-22T09:00:00.000Z</published>
+    <updated>2022-05-22T12:47:00.147Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><p><em>差生文具多 说的就是我</em></p><p>我喜欢VScode的原因很简单，就是它通过插件实现的客制化，你随时都可以因为有了新的需求而安装一个新的插件，而不是下载一个新的庞杂的软件。目前在用的功能：</p><blockquote><p>代码编辑以及编译运行（C Java Go Python）</p><p>更新GitHub.io的博客</p><p>SSH远程登录服务器</p><p>…</p></blockquote><h3 id="更好看"><a href="#更好看" class="headerlink" title="更好看"></a>更好看</h3><p>插件市场有无数让你的VScode变好看的插件，我最开始用的是“Pink-Cat-Boo Theme”的颜色主题，目前用的是：</p><blockquote><ul><li><p>配色：<a href="https://marketplace.visualstudio.com/items?itemName=sldobri.bunker">Dobri Next - Themes and Icons</a> 中的Dobri Next -B01-Hard</p></li><li><p>背景：<a href="https://marketplace.visualstudio.com/items?itemName=shalldie.background">background</a> <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h2hadae6auj20z40kgq6u.jpg" alt="image-20220522165838428" style="zoom:50%;"></p></li><li><p>图标：<a href="https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons">VSCode Great Icons</a></p></li></ul><p>总体效果：</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h2habiukytj21my0u0q77.jpg" alt="image-20220522165649714"></p></blockquote><h3 id="代码编辑"><a href="#代码编辑" class="headerlink" title="代码编辑"></a>代码编辑</h3><blockquote><h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><blockquote><p>macos自带C/C++编译器</p><p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++官方插件</a></p></blockquote><h4 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h4><blockquote><h5 id="Java开发环境（JDK）"><a href="#Java开发环境（JDK）" class="headerlink" title="Java开发环境（JDK）"></a>Java开发环境（JDK）</h5><h5 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h5><p><a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">Java官方插件</a></p><p>Java没有一个功能丰富的插件，每个插件各司其职 </p></blockquote><h4 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h4><blockquote><h5 id="安装Go编译器"><a href="#安装Go编译器" class="headerlink" title="安装Go编译器"></a>安装Go编译器</h5><p><a href="https://golang.google.cn/dl/">https://golang.google.cn/dl/</a></p><p><code>$ go version</code></p><h6 id="插件-1"><a href="#插件-1" class="headerlink" title="插件"></a>插件</h6><p><a href="https://marketplace.visualstudio.com/items?itemName=golang.Go">Go官方插件</a></p></blockquote><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><blockquote><h5 id="安装python3解释器"><a href="#安装python3解释器" class="headerlink" title="安装python3解释器"></a>安装python3解释器</h5><p><code>$ brew install pyhton3</code></p><p><code>$ python3 --version</code></p><h5 id="插件-2"><a href="#插件-2" class="headerlink" title="插件"></a>插件</h5><p><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python官方插件</a></p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h2hao8ur8xj20lc04cdfu.jpg" alt="image-20220522170910964" style="zoom:33%;"><h5 id="Jupyter-Notebooks"><a href="#Jupyter-Notebooks" class="headerlink" title="Jupyter Notebooks"></a>Jupyter Notebooks</h5><p><a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter官方插件</a></p><p>Command+Shift+P <code>Creat:New Jupyter Notebook</code></p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h2hare4gmvj212205ewfc.jpg" alt="image-20220522171212477" style="zoom:33%;"></blockquote></blockquote><h3 id="更新GitHub-io的博客"><a href="#更新GitHub-io的博客" class="headerlink" title="更新GitHub.io的博客"></a>更新GitHub.io的博客</h3><blockquote><p>涉及 SSH Git GitHub Shell hexo-admin 待更</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/img/yan.jpg&quot; alt=&quot;yan&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;差生文具多 说的就是我&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;我喜欢VScode的原因很简单，就是它通过插件实现的客制化，你随时都可以因为有了新的需求而安装一个新的插件，而不是下载一个新的庞杂的软</summary>
+      
+    
+    
+    
+    
+    <category term="tools" scheme="http://example.com/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title>硬件-CPU 内存</title>
