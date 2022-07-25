@@ -1,0 +1,154 @@
+<!DOCTYPE html><html class="appearance-dark" lang="en"><head><meta charset="UTF-8"><title>可视化需求分析</title><meta name="description" content="吾生也有涯，而知也无涯。"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="
+可视化需求分析
+[Day1]
+
+以一个小游戏为“引子”
+需求描述的质量
+验收标准对于需求描述的重要性
+需求变更的应对
+可视化的好处
+
+产品经理角色定位
+是否需要兼顾 产品创设与需求分析 各有利弊
+在业务与开发之间完成 需求收集与需求分析
+
+需求分析痛点归纳
+上游协作的痛点（业务方）需求分析的痛点下游协作的痛点（开发团队）【练习】审核流程
+泳道图进行解耦（灵活性
+“判定矩阵”笛卡尔集 （完整性
+数学符号（精确性
+【质量标准】
+
+
+!!!解决一页纸需求问题例子：银行向商户收费
+
+先是进行了【头脑风暴】 考虑的比较细节 有价值但是不全面
+
+业务价值确认
+通过商户合作挣钱
+
+角色梳理隐含Boss 容易忽略的人
+
+运营 领导 （财务） 老板 操作员
+
+术语定义主业务流程合同 取现
+
+ 
+ 网格式泳道图
+ !!! 别.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">bingxue-Gu's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">可视化需求分析</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">可视化需求分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A5%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B8%BA%E2%80%9C%E5%BC%95%E5%AD%90%E2%80%9D"><span class="toc-text">以一个小游戏为“引子”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E8%A7%92%E8%89%B2%E5%AE%9A%E4%BD%8D"><span class="toc-text">产品经理角色定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%97%9B%E7%82%B9%E5%BD%92%E7%BA%B3"><span class="toc-text">需求分析痛点归纳</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%9A%84%E7%97%9B%E7%82%B9%EF%BC%88%E4%B8%9A%E5%8A%A1%E6%96%B9%EF%BC%89"><span class="toc-text">上游协作的痛点（业务方）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%9A%84%E7%97%9B%E7%82%B9"><span class="toc-text">需求分析的痛点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%9A%84%E7%97%9B%E7%82%B9%EF%BC%88%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F%EF%BC%89"><span class="toc-text">下游协作的痛点（开发团队）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E7%BB%83%E4%B9%A0%E3%80%91%E5%AE%A1%E6%A0%B8%E6%B5%81%E7%A8%8B"><span class="toc-text">【练习】审核流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E4%B8%80%E9%A1%B5%E7%BA%B8%E9%9C%80%E6%B1%82%E9%97%AE%E9%A2%98"><span class="toc-text">!!!解决一页纸需求问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E4%BB%B7%E5%80%BC%E7%A1%AE%E8%AE%A4"><span class="toc-text">业务价值确认</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E6%A2%B3%E7%90%86"><span class="toc-text">角色梳理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89"><span class="toc-text">术语定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B"><span class="toc-text">主业务流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%BC%8F"><span class="toc-text">思维模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E6%9E%9C"><span class="toc-text">成果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C%E4%B8%9A%E5%8A%A1%E6%96%B9%E7%A1%AE%E8%AE%A4%E9%9C%80%E6%B1%82%E7%90%86%E8%A7%A3"><span class="toc-text">和业务方确认需求理解</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/%E4%BA%A7%E5%93%81"><i class="tag post-item-tag">产品</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">可视化需求分析</h1><time class="has-text-grey" datetime="2022-07-25T15:09:43.000Z">2022-07-25</time><article class="mt-2 post-content"><p><img src="/img/yan.jpg" alt="yan"></p>
+<h1 id="可视化需求分析"><a href="#可视化需求分析" class="headerlink" title="可视化需求分析"></a>可视化需求分析</h1><hr>
+<p><strong>[Day1]</strong></p>
+<hr>
+<h2 id="以一个小游戏为“引子”"><a href="#以一个小游戏为“引子”" class="headerlink" title="以一个小游戏为“引子”"></a>以一个小游戏为“引子”</h2><blockquote>
+<p><strong>需求描述</strong>的质量</p>
+<p>验收标准对于需求描述的重要性</p>
+<p>需求变更的应对</p>
+<p><strong>可视化</strong>的好处</p>
+</blockquote>
+<h2 id="产品经理角色定位"><a href="#产品经理角色定位" class="headerlink" title="产品经理角色定位"></a>产品经理角色定位</h2><blockquote>
+<p>是否需要兼顾 <strong>产品创设与需求分析</strong> 各有利弊</p>
+<p>在业务与开发之间完成 <strong>需求收集与需求分析</strong></p>
+</blockquote>
+<h2 id="需求分析痛点归纳"><a href="#需求分析痛点归纳" class="headerlink" title="需求分析痛点归纳"></a>需求分析痛点归纳</h2><blockquote>
+<h3 id="上游协作的痛点（业务方）"><a href="#上游协作的痛点（业务方）" class="headerlink" title="上游协作的痛点（业务方）"></a>上游协作的痛点（业务方）</h3><h3 id="需求分析的痛点"><a href="#需求分析的痛点" class="headerlink" title="需求分析的痛点"></a>需求分析的痛点</h3><h3 id="下游协作的痛点（开发团队）"><a href="#下游协作的痛点（开发团队）" class="headerlink" title="下游协作的痛点（开发团队）"></a>下游协作的痛点（开发团队）</h3><h3 id="【练习】审核流程"><a href="#【练习】审核流程" class="headerlink" title="【练习】审核流程"></a>【练习】审核流程</h3><blockquote>
+<p>泳道图进行解耦（灵活性</p>
+<p>“判定矩阵”笛卡尔集 （完整性</p>
+<p>数学符号（精确性</p>
+<p>【质量标准】</p>
+</blockquote>
+</blockquote>
+<h2 id="解决一页纸需求问题"><a href="#解决一页纸需求问题" class="headerlink" title="!!!解决一页纸需求问题"></a>!!!解决一页纸需求问题</h2><p>例子：银行向商户收费</p>
+<blockquote>
+<p>先是进行了【头脑风暴】 考虑的比较细节 有价值但是不全面</p>
+</blockquote>
+<h3 id="业务价值确认"><a href="#业务价值确认" class="headerlink" title="业务价值确认"></a>业务价值确认</h3><blockquote>
+<p>通过商户合作挣钱</p>
+</blockquote>
+<h3 id="角色梳理"><a href="#角色梳理" class="headerlink" title="角色梳理"></a>角色梳理</h3><p>隐含Boss 容易忽略的人</p>
+<blockquote>
+<p>运营 领导 （财务） 老板 操作员</p>
+</blockquote>
+<h3 id="术语定义"><a href="#术语定义" class="headerlink" title="术语定义"></a>术语定义</h3><h3 id="主业务流程"><a href="#主业务流程" class="headerlink" title="主业务流程"></a>主业务流程</h3><p>合同 取现</p>
+<blockquote>
+<p> <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjgju31kj20t80m2ju5.jpg" alt="image-20220725222449557"></p>
+<p> 网格式泳道图</p>
+<p> !!! 别陷入细节</p>
+<p> 采用“<strong>分层</strong>”分析流程，层层细化   “引导”业务（提供一个框架）</p>
+<p> 【这个案例中我们如何发现<strong>合同</strong>的】在梳理流程过程中发现的</p>
+</blockquote>
+<h3 id="思维模式"><a href="#思维模式" class="headerlink" title="思维模式"></a>思维模式</h3><ul>
+<li>对称思维</li>
+</ul>
+<blockquote>
+<p>主业务流程是乐观的 对称思维是悲观的</p>
+<p><strong>列出一些对称的场景</strong> 0签约 1 解约 2 续约 3 解约后续约</p>
+<p><strong>【待业务方回答的问题清单】</strong></p>
+<p><strong>列出对称场景造成的影响</strong>：</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjy1yssgj20p406igm7.jpg" alt="image-20220725224147088" style="zoom:33%;">
+
+<p>取现失败  失败提醒</p>
+</blockquote>
+<ul>
+<li>边界思维</li>
+</ul>
+<blockquote>
+<p>尤其是数字类</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jk6b3t5vj20y00fgac8.jpg" alt="image-20220725224940994" style="zoom:50%;">
+</blockquote>
+<ul>
+<li>异常思维</li>
+</ul>
+<blockquote>
+<p>一般可以延用其他系统的共性问题</p>
+</blockquote>
+<ul>
+<li>多样性 </li>
+</ul>
+<blockquote>
+<p>主要考虑多样性带来的<strong>复杂性</strong>的上升</p>
+</blockquote>
+<blockquote>
+<p>客户的多样性 ：一般用户 大客户</p>
+<p>审批多样性：单独审批 批量审批</p>
+<p>取现频率：自动化取现 手工取现</p>
+<p>店铺多样性：单账户 多账户</p>
+</blockquote>
+<ul>
+<li>并发思维</li>
+</ul>
+<blockquote>
+<p>一般可以延用其他系统的共性问题</p>
+</blockquote>
+<ul>
+<li>生命周期思维</li>
+</ul>
+<blockquote>
+<p>【字段】 </p>
+</blockquote>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkeu6cjfj21b20rkwkv.jpg" alt="image-20220725225749908" style="zoom:50%;">
+
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkgwq5xjj217a0bgmz9.jpg" alt="image-20220725225952606" style="zoom:36%;">
+</blockquote>
+<blockquote>
+<p>【功能】 </p>
+</blockquote>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkiod8goj215s09u0tk.jpg" alt="image-20220725230132785" style="zoom:50%;">
+
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jki5uh6mj216o0as407.jpg" alt="image-20220725230105398" style="zoom:36%;"> 
+</blockquote>
+<blockquote>
+<p> 【外部依赖】</p>
+<p> 支付系统 对账系统 合同系统 签名系统 提醒系统 风控系统</p>
+</blockquote>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p><strong>【待业务方提供的资料清单】</strong></p>
+<p><strong>【待业务方回答的问题清单】</strong></p>
+<p><strong>【功能列表】</strong></p>
+<h2 id="和业务方确认需求理解"><a href="#和业务方确认需求理解" class="headerlink" title="和业务方确认需求理解"></a>和业务方确认需求理解</h2><p>故事线的方式确认需求分析成果</p>
+<blockquote>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkmpxgbzj21h80qadll.jpg" alt="image-20220725230523579"></p>
+</blockquote>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2022/06/12/Iterm2-Typora/Iterm2-Typora/" title="Item2｜Typora"><span class="has-text-weight-semibold">Next: Item2｜Typora</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="bingxue-Gu/bingxue-gu.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/bingxue-Gu"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com/bingxuegu/"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><a title="zhihu" target="_blank" rel="noopener nofollow" href="//zhihu.com/people/nian-nian-bu-wang-bi-you-hui-xiang-32"><i class="iconfont icon-zhihu"></i></a><!-- 领英--><!-- 脸书--></section><p><span>Copyright ©</span><span> bingxue-Gu 2022</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

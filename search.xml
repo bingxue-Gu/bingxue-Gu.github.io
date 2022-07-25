@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>可视化需求分析</title>
+      <link href="2022/07/25/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/"/>
+      <url>2022/07/25/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/img/yan.jpg" alt="yan"></p><h1 id="可视化需求分析"><a href="#可视化需求分析" class="headerlink" title="可视化需求分析"></a>可视化需求分析</h1><hr><p><strong>[Day1]</strong></p><hr><h2 id="以一个小游戏为“引子”"><a href="#以一个小游戏为“引子”" class="headerlink" title="以一个小游戏为“引子”"></a>以一个小游戏为“引子”</h2><blockquote><p><strong>需求描述</strong>的质量</p><p>验收标准对于需求描述的重要性</p><p>需求变更的应对</p><p><strong>可视化</strong>的好处</p></blockquote><h2 id="产品经理角色定位"><a href="#产品经理角色定位" class="headerlink" title="产品经理角色定位"></a>产品经理角色定位</h2><blockquote><p>是否需要兼顾 <strong>产品创设与需求分析</strong> 各有利弊</p><p>在业务与开发之间完成 <strong>需求收集与需求分析</strong></p></blockquote><h2 id="需求分析痛点归纳"><a href="#需求分析痛点归纳" class="headerlink" title="需求分析痛点归纳"></a>需求分析痛点归纳</h2><blockquote><h3 id="上游协作的痛点（业务方）"><a href="#上游协作的痛点（业务方）" class="headerlink" title="上游协作的痛点（业务方）"></a>上游协作的痛点（业务方）</h3><h3 id="需求分析的痛点"><a href="#需求分析的痛点" class="headerlink" title="需求分析的痛点"></a>需求分析的痛点</h3><h3 id="下游协作的痛点（开发团队）"><a href="#下游协作的痛点（开发团队）" class="headerlink" title="下游协作的痛点（开发团队）"></a>下游协作的痛点（开发团队）</h3><h3 id="【练习】审核流程"><a href="#【练习】审核流程" class="headerlink" title="【练习】审核流程"></a>【练习】审核流程</h3><blockquote><p>泳道图进行解耦（灵活性</p><p>“判定矩阵”笛卡尔集 （完整性</p><p>数学符号（精确性</p><p>【质量标准】</p></blockquote></blockquote><h2 id="解决一页纸需求问题"><a href="#解决一页纸需求问题" class="headerlink" title="!!!解决一页纸需求问题"></a>!!!解决一页纸需求问题</h2><p>例子：银行向商户收费</p><blockquote><p>先是进行了【头脑风暴】 考虑的比较细节 有价值但是不全面</p></blockquote><h3 id="业务价值确认"><a href="#业务价值确认" class="headerlink" title="业务价值确认"></a>业务价值确认</h3><blockquote><p>通过商户合作挣钱</p></blockquote><h3 id="角色梳理"><a href="#角色梳理" class="headerlink" title="角色梳理"></a>角色梳理</h3><p>隐含Boss 容易忽略的人</p><blockquote><p>运营 领导 （财务） 老板 操作员</p></blockquote><h3 id="术语定义"><a href="#术语定义" class="headerlink" title="术语定义"></a>术语定义</h3><h3 id="主业务流程"><a href="#主业务流程" class="headerlink" title="主业务流程"></a>主业务流程</h3><p>合同 取现</p><blockquote><p> <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjgju31kj20t80m2ju5.jpg" alt="image-20220725222449557"></p><p> 网格式泳道图</p><p> !!! 别陷入细节</p><p> 采用“<strong>分层</strong>”分析流程，层层细化   “引导”业务（提供一个框架）</p><p> 【这个案例中我们如何发现<strong>合同</strong>的】在梳理流程过程中发现的</p></blockquote><h3 id="思维模式"><a href="#思维模式" class="headerlink" title="思维模式"></a>思维模式</h3><ul><li>对称思维</li></ul><blockquote><p>主业务流程是乐观的 对称思维是悲观的</p><p><strong>列出一些对称的场景</strong> 0签约 1 解约 2 续约 3 解约后续约</p><p><strong>【待业务方回答的问题清单】</strong></p><p><strong>列出对称场景造成的影响</strong>：</p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjy1yssgj20p406igm7.jpg" alt="image-20220725224147088" style="zoom:33%;"><p>取现失败  失败提醒</p></blockquote><ul><li>边界思维</li></ul><blockquote><p>尤其是数字类</p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jk6b3t5vj20y00fgac8.jpg" alt="image-20220725224940994" style="zoom:50%;"></blockquote><ul><li>异常思维</li></ul><blockquote><p>一般可以延用其他系统的共性问题</p></blockquote><ul><li>多样性 </li></ul><blockquote><p>主要考虑多样性带来的<strong>复杂性</strong>的上升</p></blockquote><blockquote><p>客户的多样性 ：一般用户 大客户</p><p>审批多样性：单独审批 批量审批</p><p>取现频率：自动化取现 手工取现</p><p>店铺多样性：单账户 多账户</p></blockquote><ul><li>并发思维</li></ul><blockquote><p>一般可以延用其他系统的共性问题</p></blockquote><ul><li>生命周期思维</li></ul><blockquote><p>【字段】 </p></blockquote><blockquote><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkeu6cjfj21b20rkwkv.jpg" alt="image-20220725225749908" style="zoom:50%;"><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkgwq5xjj217a0bgmz9.jpg" alt="image-20220725225952606" style="zoom:36%;"></blockquote><blockquote><p>【功能】 </p></blockquote><blockquote><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkiod8goj215s09u0tk.jpg" alt="image-20220725230132785" style="zoom:50%;"><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jki5uh6mj216o0as407.jpg" alt="image-20220725230105398" style="zoom:36%;"> </blockquote><blockquote><p> 【外部依赖】</p><p> 支付系统 对账系统 合同系统 签名系统 提醒系统 风控系统</p></blockquote><h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p><strong>【待业务方提供的资料清单】</strong></p><p><strong>【待业务方回答的问题清单】</strong></p><p><strong>【功能列表】</strong></p><h2 id="和业务方确认需求理解"><a href="#和业务方确认需求理解" class="headerlink" title="和业务方确认需求理解"></a>和业务方确认需求理解</h2><p>故事线的方式确认需求分析成果</p><blockquote><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkmpxgbzj21h80qadll.jpg" alt="image-20220725230523579"></p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 产品 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Item2｜Typora</title>
       <link href="2022/06/12/Iterm2-Typora/Iterm2-Typora/"/>
       <url>2022/06/12/Iterm2-Typora/Iterm2-Typora/</url>
