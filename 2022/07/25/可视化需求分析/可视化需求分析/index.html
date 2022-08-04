@@ -1,154 +1,234 @@
 <!DOCTYPE html><html class="appearance-dark" lang="en"><head><meta charset="UTF-8"><title>可视化需求分析</title><meta name="description" content="吾生也有涯，而知也无涯。"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
 <!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="
-可视化需求分析
-[Day1]
+可视化需求分析_1以一个小游戏为“引子”
+复述“需求”
 
-以一个小游戏为“引子”
-需求描述的质量
-验收标准对于需求描述的重要性
-需求变更的应对
-可视化的好处
-
-产品经理角色定位
-是否需要兼顾 产品创设与需求分析 各有利弊
-在业务与开发之间完成 需求收集与需求分析
-
-需求分析痛点归纳
-上游协作的痛点（业务方）需求分析的痛点下游协作的痛点（开发团队）【练习】审核流程
-泳道图进行解耦（灵活性
-“判定矩阵”笛卡尔集 （完整性
-数学符号（精确性
-【质量标准】
+「需求描述」的质量
+「验收标准」对于需求描述的重要性
+「需求变更」的应对
+「可视化」的好处
 
 
-!!!解决一页纸需求问题例子：银行向商户收费
+产品经理的角色定位
+是否需要兼顾 「产品创设」与「需求分析」 各有利弊
+在业务与开发之间完成 「需求收集与需求分析」
 
-先是进行了【头脑风暴】 考虑的比较细节 有价值但是不全面
+需求分析痛点归纳上游协作痛点（业务方）
+一页纸需求
 
-业务价值确认
-通过商户合作挣钱
+需求分析痛点下游协作痛点（开发团队）
+听不懂需求
 
-角色梳理隐含Boss 容易忽略的人
-
-运营 领导 （财务） 老板 操作员
-
-术语定义主业务流程合同 取现
-
- 
- 网格式泳道图
- !!! 别.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">bingxue-Gu's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">可视化需求分析</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">可视化需求分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A5%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B8%BA%E2%80%9C%E5%BC%95%E5%AD%90%E2%80%9D"><span class="toc-text">以一个小游戏为“引子”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E8%A7%92%E8%89%B2%E5%AE%9A%E4%BD%8D"><span class="toc-text">产品经理角色定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%97%9B%E7%82%B9%E5%BD%92%E7%BA%B3"><span class="toc-text">需求分析痛点归纳</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%9A%84%E7%97%9B%E7%82%B9%EF%BC%88%E4%B8%9A%E5%8A%A1%E6%96%B9%EF%BC%89"><span class="toc-text">上游协作的痛点（业务方）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%9A%84%E7%97%9B%E7%82%B9"><span class="toc-text">需求分析的痛点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%9A%84%E7%97%9B%E7%82%B9%EF%BC%88%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F%EF%BC%89"><span class="toc-text">下游协作的痛点（开发团队）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E7%BB%83%E4%B9%A0%E3%80%91%E5%AE%A1%E6%A0%B8%E6%B5%81%E7%A8%8B"><span class="toc-text">【练习】审核流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E4%B8%80%E9%A1%B5%E7%BA%B8%E9%9C%80%E6%B1%82%E9%97%AE%E9%A2%98"><span class="toc-text">!!!解决一页纸需求问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E4%BB%B7%E5%80%BC%E7%A1%AE%E8%AE%A4"><span class="toc-text">业务价值确认</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E6%A2%B3%E7%90%86"><span class="toc-text">角色梳理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89"><span class="toc-text">术语定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B"><span class="toc-text">主业务流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%BC%8F"><span class="toc-text">思维模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E6%9E%9C"><span class="toc-text">成果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C%E4%B8%9A%E5%8A%A1%E6%96%B9%E7%A1%AE%E8%AE%A4%E9%9C%80%E6%B1%82%E7%90%86%E8%A7%A3"><span class="toc-text">和业务方确认需求理解</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/%E4%BA%A7%E5%93%81"><i class="tag post-item-tag">产品</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">可视化需求分析</h1><time class="has-text-grey" datetime="2022-07-25T15:09:43.000Z">2022-07-25</time><article class="mt-2 post-content"><p><img src="/img/yan.jpg" alt="yan"></p>
-<h1 id="可视化需求分析"><a href="#可视化需求分析" class="headerlink" title="可视化需求分析"></a>可视化需求分析</h1><hr>
-<p><strong>[Day1]</strong></p>
-<hr>
-<h2 id="以一个小游戏为“引子”"><a href="#以一个小游戏为“引子”" class="headerlink" title="以一个小游戏为“引子”"></a>以一个小游戏为“引子”</h2><blockquote>
-<p><strong>需求描述</strong>的质量</p>
-<p>验收标准对于需求描述的重要性</p>
-<p>需求变更的应对</p>
-<p><strong>可视化</strong>的好处</p>
-</blockquote>
-<h2 id="产品经理角色定位"><a href="#产品经理角色定位" class="headerlink" title="产品经理角色定位"></a>产品经理角色定位</h2><blockquote>
-<p>是否需要兼顾 <strong>产品创设与需求分析</strong> 各有利弊</p>
-<p>在业务与开发之间完成 <strong>需求收集与需求分析</strong></p>
-</blockquote>
-<h2 id="需求分析痛点归纳"><a href="#需求分析痛点归纳" class="headerlink" title="需求分析痛点归纳"></a>需求分析痛点归纳</h2><blockquote>
-<h3 id="上游协作的痛点（业务方）"><a href="#上游协作的痛点（业务方）" class="headerlink" title="上游协作的痛点（业务方）"></a>上游协作的痛点（业务方）</h3><h3 id="需求分析的痛点"><a href="#需求分析的痛点" class="headerlink" title="需求分析的痛点"></a>需求分析的痛点</h3><h3 id="下游协作的痛点（开发团队）"><a href="#下游协作的痛点（开发团队）" class="headerlink" title="下游协作的痛点（开发团队）"></a>下游协作的痛点（开发团队）</h3><h3 id="【练习】审核流程"><a href="#【练习】审核流程" class="headerlink" title="【练习】审核流程"></a>【练习】审核流程</h3><blockquote>
-<p>泳道图进行解耦（灵活性</p>
-<p>“判定矩阵”笛卡尔集 （完整性</p>
-<p>数学符号（精确性</p>
-<p>【质量标准】</p>
-</blockquote>
-</blockquote>
-<h2 id="解决一页纸需求问题"><a href="#解决一页纸需求问题" class="headerlink" title="!!!解决一页纸需求问题"></a>!!!解决一页纸需求问题</h2><p>例子：银行向商户收费</p>
+【练习】修改到期日-功能某企业业务部门为进一步实现审核流程的标准化和自动化，计划在现有系统中增加一项修改到期日的功能，具体规则说明如下：
+1.申请的新的到期日需晚于申请日当日，方能在系统中成功提交。若原到期日之前未审批通过，则系统自动驳回。
+2.如果修改到期日的申请未在原到期日前通过 （驳回或未批复），则仍以原到期日期为准；针对同一.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">bingxue-Gu's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">可视化需求分析</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90-1"><span class="toc-text">可视化需求分析_1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A5%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B8%BA%E2%80%9C%E5%BC%95%E5%AD%90%E2%80%9D"><span class="toc-text">以一个小游戏为“引子”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%A7%92%E8%89%B2%E5%AE%9A%E4%BD%8D"><span class="toc-text">产品经理的角色定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%97%9B%E7%82%B9%E5%BD%92%E7%BA%B3"><span class="toc-text">需求分析痛点归纳</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%97%9B%E7%82%B9%EF%BC%88%E4%B8%9A%E5%8A%A1%E6%96%B9%EF%BC%89"><span class="toc-text">上游协作痛点（业务方）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%97%9B%E7%82%B9"><span class="toc-text">需求分析痛点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E6%B8%B8%E5%8D%8F%E4%BD%9C%E7%97%9B%E7%82%B9%EF%BC%88%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F%EF%BC%89"><span class="toc-text">下游协作痛点（开发团队）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%90%E7%BB%83%E4%B9%A0%E3%80%91%E4%BF%AE%E6%94%B9%E5%88%B0%E6%9C%9F%E6%97%A5-%E5%8A%9F%E8%83%BD"><span class="toc-text">【练习】修改到期日-功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%81%EF%BC%81%E4%BA%94%E6%AD%A5%E6%B3%95%E4%BB%8B%E7%BB%8D"><span class="toc-text">！！五步法介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%90%E8%A7%A3%E5%86%B3%E4%B8%80%E9%A1%B5%E7%BA%B8%E9%9C%80%E6%B1%82%E3%80%91"><span class="toc-text">【解决一页纸需求】</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Step1-%E4%B8%9A%E5%8A%A1%E4%BB%B7%E5%80%BC%E7%A1%AE%E8%AE%A4%E2%80%94%E2%80%94%E8%B5%9A%E9%92%B1"><span class="toc-text">Step1:业务价值确认——赚钱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step2-%E8%A7%92%E8%89%B2%E6%A2%B3%E7%90%86%E2%80%94%E2%80%94%E8%BF%90%E8%90%A5%E6%96%B9%EF%BC%9B%E9%A2%86%E5%AF%BC%EF%BC%9B%EF%BC%88%E9%9A%90%EF%BC%89%E8%B4%A2%E5%8A%A1%E5%AF%B9%E8%B4%A6%EF%BC%9B%E8%80%81%E6%9D%BF%EF%BC%9B%E6%93%8D%E4%BD%9C%E5%91%98"><span class="toc-text">Step2:角色梳理——运营方；领导；（隐）财务对账；老板；操作员</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step3-%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89%E2%80%94%E2%80%94%E4%B8%8D%E6%B6%89%E5%8F%8A%E4%BB%80%E4%B9%88%E6%9C%AF%E8%AF%AD"><span class="toc-text">Step3:术语定义——不涉及什么术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step4-%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E2%80%94%E2%80%94%E5%8E%9F%E5%A7%8B%E9%9C%80%E6%B1%82%E6%B2%A1%E6%9C%89%E6%8F%90%E2%80%9C%E5%90%88%E5%90%8C%E2%80%9D"><span class="toc-text">Step4:主业务流程——原始需求没有提“合同”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step5-%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%BC%8F"><span class="toc-text">Step5:思维模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E6%9E%9C"><span class="toc-text">成果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C%E4%B8%9A%E5%8A%A1%E6%96%B9%E7%A1%AE%E8%AE%A4%E9%9C%80%E6%B1%82%E7%90%86%E8%A7%A3"><span class="toc-text">和业务方确认需求理解</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/%E4%BA%A7%E5%93%81"><i class="tag post-item-tag">产品</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">可视化需求分析</h1><time class="has-text-grey" datetime="2022-07-25T15:09:43.000Z">2022-07-25</time><article class="mt-2 post-content"><p><img src="/img/yan.jpg" alt="yan"></p>
+<h1 id="可视化需求分析-1"><a href="#可视化需求分析-1" class="headerlink" title="可视化需求分析_1"></a>可视化需求分析_1</h1><h2 id="以一个小游戏为“引子”"><a href="#以一个小游戏为“引子”" class="headerlink" title="以一个小游戏为“引子”"></a>以一个小游戏为“引子”</h2><blockquote>
+<p>复述“需求”</p>
 <blockquote>
-<p>先是进行了【头脑风暴】 考虑的比较细节 有价值但是不全面</p>
+<p>「<strong>需求描述</strong>」的质量</p>
+<p>「<strong>验收标准</strong>」对于需求描述的重要性</p>
+<p>「<strong>需求变更</strong>」的应对</p>
+<p>「<strong>可视化</strong>」的好处</p>
 </blockquote>
-<h3 id="业务价值确认"><a href="#业务价值确认" class="headerlink" title="业务价值确认"></a>业务价值确认</h3><blockquote>
-<p>通过商户合作挣钱</p>
 </blockquote>
-<h3 id="角色梳理"><a href="#角色梳理" class="headerlink" title="角色梳理"></a>角色梳理</h3><p>隐含Boss 容易忽略的人</p>
+<h2 id="产品经理的角色定位"><a href="#产品经理的角色定位" class="headerlink" title="产品经理的角色定位"></a>产品经理的角色定位</h2><blockquote>
+<p>是否需要兼顾 「<strong>产品创设」与「需求分析</strong>」 各有利弊</p>
+<p>在业务与开发之间完成 「<strong>需求收集与需求分析</strong>」</p>
+</blockquote>
+<h2 id="需求分析痛点归纳"><a href="#需求分析痛点归纳" class="headerlink" title="需求分析痛点归纳"></a>需求分析痛点归纳</h2><h3 id="上游协作痛点（业务方）"><a href="#上游协作痛点（业务方）" class="headerlink" title="上游协作痛点（业务方）"></a>上游协作痛点（业务方）</h3><blockquote>
+<p>一页纸需求</p>
+</blockquote>
+<h3 id="需求分析痛点"><a href="#需求分析痛点" class="headerlink" title="需求分析痛点"></a>需求分析痛点</h3><h3 id="下游协作痛点（开发团队）"><a href="#下游协作痛点（开发团队）" class="headerlink" title="下游协作痛点（开发团队）"></a>下游协作痛点（开发团队）</h3><blockquote>
+<p>听不懂需求</p>
+</blockquote>
+<h3 id="【练习】修改到期日-功能"><a href="#【练习】修改到期日-功能" class="headerlink" title="【练习】修改到期日-功能"></a>【练习】修改到期日-功能</h3><p>某企业业务部门为进一步实现审核流程的标准化和自动化，计划在现有系统中增加一项修改到期日的功能，具体规则说明如下：</p>
+<p>1.申请的新的到期日需晚于申请日当日，方能在系统中成功提交。若原到期日之前未审批通过，则系统自动驳回。</p>
+<p>2.如果修改到期日的申请未在原到期日前通过 （驳回或未批复），则仍以原到期日期为准；针对同一项业务的修改申请，最多提交三次审核。</p>
+<p><code>「个人」这个需求在刚看到时候首先想到的是流程图，绘制过程中发现分支情况众多，且难以覆盖全面，Teacher say 是因为自己有的工具只有“流程图”这一个 ‘手里有锤子看什么都像钉子’</code></p>
 <blockquote>
-<p>运营 领导 （财务） 老板 操作员</p>
-</blockquote>
-<h3 id="术语定义"><a href="#术语定义" class="headerlink" title="术语定义"></a>术语定义</h3><h3 id="主业务流程"><a href="#主业务流程" class="headerlink" title="主业务流程"></a>主业务流程</h3><p>合同 取现</p>
-<blockquote>
-<p> <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjgju31kj20t80m2ju5.jpg" alt="image-20220725222449557"></p>
-<p> 网格式泳道图</p>
-<p> !!! 别陷入细节</p>
-<p> 采用“<strong>分层</strong>”分析流程，层层细化   “引导”业务（提供一个框架）</p>
-<p> 【这个案例中我们如何发现<strong>合同</strong>的】在梳理流程过程中发现的</p>
-</blockquote>
-<h3 id="思维模式"><a href="#思维模式" class="headerlink" title="思维模式"></a>思维模式</h3><ul>
-<li>对称思维</li>
+<ul>
+<li>泳道式流程图 进行解耦（灵活性</li>
 </ul>
+<p><code>启用这个功能是“提交申请”，申请的结果有两种，“通过”和“驳回”，而描述中于时间有关的影响申请结果的判定，不放入泳道式流程图中</code></p>
+</blockquote>
 <blockquote>
-<p>主业务流程是乐观的 对称思维是悲观的</p>
-<p><strong>列出一些对称的场景</strong> 0签约 1 解约 2 续约 3 解约后续约</p>
-<p><strong>【待业务方回答的问题清单】</strong></p>
-<p><strong>列出对称场景造成的影响</strong>：</p>
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjy1yssgj20p406igm7.jpg" alt="image-20220725224147088" style="zoom:33%;">
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4st7ywzyuj20u00vi0xh.jpg" alt="image-20220802225237980" style="zoom:33%;">
 
-<p>取现失败  失败提醒</p>
+<ul>
+<li>“判定矩阵”笛卡尔集 （完整性</li>
+</ul>
+<p><code>时间对结果的影响 为了100%覆盖采用了笛卡尔集的方式 而不是“当当当当”</code></p>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4stccrwq0j21v30u0n76.jpg" alt="image-20220802225644652" style="zoom:33%;">
 </blockquote>
 <ul>
-<li>边界思维</li>
+<li>数学符号（精确性</li>
+</ul>
+<p><code>尽量减少模棱两可的语言，可以用数学符号来精确表示</code></p>
+<blockquote>
+<p>一个星期–&gt; T +7</p>
+<p>500-1000–&gt; [500,1000]</p>
+</blockquote>
+</blockquote>
+<h2 id="！！五步法介绍"><a href="#！！五步法介绍" class="headerlink" title="！！五步法介绍"></a>！！五步法介绍</h2><p>Step1:业务价值确认</p>
+<blockquote>
+<p>开发这个要解决什么问题</p>
+</blockquote>
+<p>Step2:角色梳理</p>
+<blockquote>
+<p>容易遗漏一些隐藏角色</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td0mx81pj20ue0c8q3t.jpg" alt="image-20220803101744334" style="zoom:33%;">
+</blockquote>
+<p>Step3:术语定义</p>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td17hstrj20uo0dkmxo.jpg" alt="image-20220803101817402" style="zoom:33%;">
+</blockquote>
+<p>Step4:主业务流程</p>
+<blockquote>
+<p>只描述<strong>「乐观」</strong>路径 </p>
+<p>注意：不要把「多件事」放在同⼀个泳道图⾥。⽐如：学员提问，教练回答不应该放在主流程⾥</p>
+<p>注意：不要把「定时任务」放进泳道图，因为定时任务⽆法⽤泳道图表达</p>
+<p>注意：不要把复杂的「逆向流程」放进泳道图，因为会增加泳道图的复杂性</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td05fa9gj20rs0kggmj.jpg" alt="image-20220803101715482" style="zoom:33%;">
+</blockquote>
+<p>Step5:思维模式</p>
+<ul>
+<li>对称思维——业务悲观</li>
 </ul>
 <blockquote>
-<p>尤其是数字类</p>
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jk6b3t5vj20y00fgac8.jpg" alt="image-20220725224940994" style="zoom:50%;">
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td4c0dc2j216k0iyq4m.jpg" alt="image-20220803102117539" style="zoom:33%;">
 </blockquote>
 <ul>
-<li>异常思维</li>
+<li>边界思维——单位</li>
 </ul>
 <blockquote>
-<p>一般可以延用其他系统的共性问题</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td3gdh45j216i0im75y.jpg" alt="image-20220803102025532" style="zoom:33%;">
 </blockquote>
 <ul>
-<li>多样性 </li>
+<li>多样性思维</li>
 </ul>
 <blockquote>
-<p>主要考虑多样性带来的<strong>复杂性</strong>的上升</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td66xudsj216g0isaba.jpg" alt="image-20220803102304603" style="zoom:33%;">
 </blockquote>
+<ul>
+<li><p>生命周期思维</p>
+</li>
+<li><p>异常思维——系统悲观</p>
+</li>
+</ul>
 <blockquote>
-<p>客户的多样性 ：一般用户 大客户</p>
-<p>审批多样性：单独审批 批量审批</p>
-<p>取现频率：自动化取现 手工取现</p>
-<p>店铺多样性：单账户 多账户</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td5mq7s3j21660imwg6.jpg" alt="image-20220803102231898" style="zoom:33%;">
 </blockquote>
 <ul>
 <li>并发思维</li>
 </ul>
 <blockquote>
-<p>一般可以延用其他系统的共性问题</p>
+<p>原子操作</p>
+</blockquote>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4td6q1wnsj216g0iomyk.jpg" alt="image-20220803102333988" style="zoom:33%;">
+</blockquote>
+<ul>
+<li>安全思维</li>
+</ul>
+<blockquote>
+<p>请教安全专家，让其定制标准，选取等级即可</p>
+</blockquote>
+<h2 id="【解决一页纸需求】"><a href="#【解决一页纸需求】" class="headerlink" title="【解决一页纸需求】"></a>【解决一页纸需求】</h2><p>例子：银行向企业收取待收款的手续费</p>
+<p>银行给企业开通两个账号，一个用于收款的账号，另外一个是活期账号。当企业打算从收款账号中将款项转移到活期账号的时候，银行打算收取一定的手续费。以便确保企业不经常把款项取走，从而可以有更多的资金用于其他业务。</p>
+<p>为了避免因为收费客户将所有款项都取走，或者转为使用别的支付渠道，允许对一部分企业设置为VIP客户，免收手续费。设置的方式需要有内部审批过程。</p>
+<p>业务方提供了如下的收取费用标准表，并且规定了每日取现上限为50万人民币。</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4sudop6fjj20ss04u0sv.jpg" alt="image-20220802233254298" style="zoom:50%;">
+
+<hr>
+<blockquote>
+<p>先是进行了【头脑风暴】 考虑的比较细节 <strong>有价值但是不全面</strong></p>
+<p><code>银行系统免不了审批</code></p>
+</blockquote>
+<blockquote>
+<p>「利用五步法」：</p>
+</blockquote>
+<h3 id="Step1-业务价值确认——赚钱"><a href="#Step1-业务价值确认——赚钱" class="headerlink" title="Step1:业务价值确认——赚钱"></a>Step1:业务价值确认——赚钱</h3><h3 id="Step2-角色梳理——运营方；领导；（隐）财务对账；老板；操作员"><a href="#Step2-角色梳理——运营方；领导；（隐）财务对账；老板；操作员" class="headerlink" title="Step2:角色梳理——运营方；领导；（隐）财务对账；老板；操作员"></a>Step2:角色梳理——运营方；领导；（隐）财务对账；老板；操作员</h3><h3 id="Step3-术语定义——不涉及什么术语"><a href="#Step3-术语定义——不涉及什么术语" class="headerlink" title="Step3:术语定义——不涉及什么术语"></a>Step3:术语定义——不涉及什么术语</h3><h3 id="Step4-主业务流程——原始需求没有提“合同”"><a href="#Step4-主业务流程——原始需求没有提“合同”" class="headerlink" title="Step4:主业务流程——原始需求没有提“合同”"></a>Step4:主业务流程——原始需求没有提“合同”</h3><blockquote>
+<p>【这个案例中 我们如何发现<strong>合同</strong>的】在梳理流程过程中发现的</p>
+<p>采用“<strong>分层</strong>”分析流程，层层细化  </p>
+<p>提供一个框架  “引导”业务 和业务方共创泳道图梳理流程</p>
+<p>!!! 别陷入细节 只分析乐观（悲观不是忽略 之后补充）</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jjgju31kj20t80m2ju5.jpg" alt="image-20220725222449557" style="zoom:33%;">
+</blockquote>
+<blockquote>
+<p><code>几乎不可能变化的主业务流程</code></p>
+<p><code>想到 0签约 1 解约 2 续约 3 解约后续约 ；解约后余额 ...时时放入【待业务方回答的问题清单】 重要的不是答案 而是提问</code></p>
+</blockquote>
+<h3 id="Step5-思维模式"><a href="#Step5-思维模式" class="headerlink" title="Step5:思维模式"></a>Step5:思维模式</h3><blockquote>
+<ul>
+<li>对称思维——业务悲观</li>
+</ul>
+<blockquote>
+<p>左边是动作 右边是影响</p>
+<p>只是列出一些场景 答案留给业务方</p>
+</blockquote>
+<blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tflh3ettj20r608274r.jpg" alt="image-20220803114658036" style="zoom:33%;">
+</blockquote>
+<ul>
+<li>边界思维</li>
+</ul>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4th14yie5j20v40emwfz.jpg" alt="image-20220803123636998" style="zoom:33%;">
+
+<ul>
+<li>多样性思维</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>主要考虑多样性带来的「<strong>复杂性</strong>」的上升</p>
+</blockquote>
+<blockquote>
+<p>商户种类 ：一般用户 大客户 可以划分等级</p>
+<p>审批：单独审批 批量审批 批量导入</p>
+<p>取现：自动化取现 手工取现 </p>
+<p>店铺：单账户 多账户</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>异常思维——系统悲观</li>
+</ul>
+<blockquote>
+<p>公共的多，复用。需要额外的时候加额外的，例如，智能客服系统</p>
+</blockquote>
+<ul>
+<li>并发思维</li>
+</ul>
+<blockquote>
+<p>公共的多，复用。多个用户同时<strong>「操作」</strong> 原子操作</p>
 </blockquote>
 <ul>
 <li>生命周期思维</li>
 </ul>
-<blockquote>
-<p>【字段】 </p>
 </blockquote>
 <blockquote>
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkeu6cjfj21b20rkwkv.jpg" alt="image-20220725225749908" style="zoom:50%;">
+<blockquote>
+<p>[合同]  [取现]</p>
+<p>左边 字段 功能 外部依赖</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tjfzn6sjj20vq0u0q6q.jpg" alt="image-20220803140004824" style="zoom: 50%;">
+</blockquote>
+</blockquote>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p><strong>【待业务方提供的资料清单】</strong>在五步法过程中不断新增</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tpsaeqx9j215e0fqabo.jpg" alt="image-20220803173930135" style="zoom:33%;">
 
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkgwq5xjj217a0bgmz9.jpg" alt="image-20220725225952606" style="zoom:36%;">
-</blockquote>
-<blockquote>
-<p>【功能】 </p>
-</blockquote>
-<blockquote>
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkiod8goj215s09u0tk.jpg" alt="image-20220725230132785" style="zoom:50%;">
+<p><strong>【待业务方回答的问题清单】</strong>在五步法过程中不断新增</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tpsi8l81j215w0fyjt0.jpg" alt="image-20220803173942848" style="zoom:33%;">
 
-<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jki5uh6mj216o0as407.jpg" alt="image-20220725230105398" style="zoom:36%;"> 
-</blockquote>
+<p><strong>【功能列表】</strong>通过五步法生成</p>
+<img src="/Users/bingxueg/Library/Application Support/typora-user-images/image-20220803174002131.png" alt="image-20220803174002131" style="zoom:33%;">
+
+<h2 id="和业务方确认需求理解"><a href="#和业务方确认需求理解" class="headerlink" title="和业务方确认需求理解"></a>和业务方确认需求理解</h2><blockquote>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tptcr3sej21080lomyp.jpg" alt="image-20220803174031614" style="zoom:33%;">
+
 <blockquote>
-<p> 【外部依赖】</p>
-<p> 支付系统 对账系统 合同系统 签名系统 提醒系统 风控系统</p>
+<p>用故事串界面</p>
 </blockquote>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p><strong>【待业务方提供的资料清单】</strong></p>
-<p><strong>【待业务方回答的问题清单】</strong></p>
-<p><strong>【功能列表】</strong></p>
-<h2 id="和业务方确认需求理解"><a href="#和业务方确认需求理解" class="headerlink" title="和业务方确认需求理解"></a>和业务方确认需求理解</h2><p>故事线的方式确认需求分析成果</p>
-<blockquote>
-<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4jkmpxgbzj21h80qadll.jpg" alt="image-20220725230523579"></p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h4tptxczuqj214e0jidhz.jpg" alt="image-20220803174104512" style="zoom:33%;">
 </blockquote>
+<hr>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2022/06/12/Iterm2-Typora/Iterm2-Typora/" title="Item2｜Typora"><span class="has-text-weight-semibold">Next: Item2｜Typora</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="bingxue-Gu/bingxue-gu.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/bingxue-Gu"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com/bingxuegu/"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><a title="zhihu" target="_blank" rel="noopener nofollow" href="//zhihu.com/people/nian-nian-bu-wang-bi-you-hui-xiang-32"><i class="iconfont icon-zhihu"></i></a><!-- 领英--><!-- 脸书--></section><p><span>Copyright ©</span><span> bingxue-Gu 2022</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>
